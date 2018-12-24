@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Tap_tanki</name>
+    <description>Game feito em construct</description>
+    <version>1.0.0.0</version>
+    <author>Perametade Games</author>
+    <author-email>perametade@gmail.com</author-email>
+    <author-website>http://www.perametade.com</author-website>
+    <app-id>com.perametade.taptanki</app-id>
+    <unique-id>3l7vf6rrzkjj4</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>La_splash</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="3977054392499459">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\bg.png" />
+        </object-type>
+        <object-type name="plataforma" sid="11626905547308">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2703828300083979">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\castleHalfMid.png" />
+        </object-type>
+        <object-type name="personagem" sid="1031370850125732">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="5458715672436306">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="2583750809807685" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\robot_greenDrive1.png">
+                        <collision-poly>
+                            <point x="0.0316456" y="0.0416667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.968354" y="0.0416667" />
+                            <point x="0.993671" y="0.5" />
+                            <point x="0.962025" y="0.95" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0316456" y="0.958333" />
+                            <point x="0.00632911" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="3243203759091639" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\robot_greenDrive1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\robot_greenDrive2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="caindo" pingpong="0" repeatcount="1" repeatto="0" sid="4788218827061947" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\robot_greenJump.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0833333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0833333" />
+                            <point x="0.9375" y="0.916667" />
+                            <point x="0.5" y="0.878788" />
+                            <point x="0.0568182" y="0.924242" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="morto" pingpong="0" repeatcount="1" repeatto="0" sid="9617114217719185" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503185" original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\robot_greenDamage2.png">
+                        <collision-poly>
+                            <point x="0.0480769" y="0.968153" />
+                            <point x="0" y="0.503185" />
+                            <point x="0.0480769" y="0.0318471" />
+                            <point x="0.5" y="0.00636941" />
+                            <point x="0.951923" y="0.0318471" />
+                            <point x="1" y="0.503185" />
+                            <point x="0.951923" y="0.968153" />
+                            <point x="0.5" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="objetos" sid="9769014906703092">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6483264748522323" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\boxCrate_double.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\hudJewel_yellow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lancador" sid="8500951109604596">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2780387301321502" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coletor_objetos" sid="6560417255062775">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4732001079309269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pontos" sid="8824783229976325">
+            <plugin id="Spritefont2" />
+            <texture original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\spritefont.fw.png" />
+        </object-type>
+        <object-type name="btn_start" sid="4396967745186653">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4013925441679583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\maciel\Maciel - Games Perametade\proj fun ninja clone\assets\buttonDefault.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="67447756515284">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="level_display" sid="760272316397875">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="objetivo_display" sid="2945982926327659">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Function" sid="294302704728523">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="coletados_display" sid="7741461000360869">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="logoperametadesplash" sid="7686279405418261">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3114165292562109" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Projetos\C2 Abertos\C2 Touch explosão web\Assets\logo-512-sem_fundo.png">
+                        <collision-poly>
+                            <point x="0.330078" y="0.330078" />
+                            <point x="0.5" y="0.158203" />
+                            <point x="0.683594" y="0.316406" />
+                            <point x="0.777344" y="0.5" />
+                            <point x="0.851563" y="0.851563" />
+                            <point x="0.5" y="0.728516" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="3186236755554729">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9496917073189679" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Projetos\C2 Abertos\C2 Touch explosão web\Assets\logoPerametadePequena.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_credits" sid="9710491830514908">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3719653076071941" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\maciel\Maciel - Games Projetos\C2 Abertos\C2 Tap Tanki Web\assets\credits.fw.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nome_game" sid="1910928639259202">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9665388411783969" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" original-source="D:\maciel\Maciel - Games Projetos\C2 Abertos\C2 Tap Tanki Web\assets\nome-game.fw.png">
+                        <collision-poly>
+                            <point x="0.00297619" y="0.0196078" />
+                            <point x="0.5" y="0" />
+                            <point x="0.997024" y="0.0196078" />
+                            <point x="0.997024" y="0.980392" />
+                            <point x="0.5" y="0.960784" />
+                            <point x="0.0267857" y="0.823529" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_menu" sid="3609773449124861">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1176713458634535" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games Projetos\C2 Abertos\C2 Tap Tanki Web\assets\menuList.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>La_game.xml</layout>
+        <layout>La_splash.xml</layout>
+        <layout>La_menu.xml</layout>
+        <layout>La_credit.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Ev_game.xml</event-sheet>
+        <event-sheet>Ev_splash.xml</event-sheet>
+        <event-sheet>Ev_menu.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="10">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="13" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

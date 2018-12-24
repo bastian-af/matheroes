@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Snake</name>
+    <description>Classic Snake</description>
+    <version>1.0</version>
+    <author>mlb</author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>29mzmex7zqvdg</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML 5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview mode">HTTP</prop>
+        <prop name="Sampling">Linear</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="food" sid="2874596573524245">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Estado" sid="230642020353319" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1350256991649934" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.03125" y="0.0351563" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.03125" y="0.96875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="head" sid="1618025832871988">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2971213332797248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bpart" sid="1447596321513096">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8315224414264586" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="1722635132734443">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Keyboard" sid="4952263354077013">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Text" sid="2420632208225126">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground" sid="4727726404231183">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="snakepos" sid="3310976667538833">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Textsegs" sid="8065184043590504">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Textrestart" sid="7392436860086357">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="imprimirAciertos" sid="415246834091791">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="Aciertos" sid="484450212829200" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="imprimirDesaciertos" sid="687582294966811">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="primo" sid="534398488556037">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="161602664910693">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="foodNoprimo" sid="100026167227157">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Estado" sid="660193996558240" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="740122324306727" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.03125" y="0.0351563" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.03125" y="0.96875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="numPrimos" sid="436997914038526">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="noprimo" sid="985641995478921">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="566109188802790">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>StartScreen.xml</layout>
+        <layout>MainGame.xml</layout>
+        <layout>GameOver.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="4" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

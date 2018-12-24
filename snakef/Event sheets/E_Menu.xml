@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E_Menu</name>
+    <events>
+        <event-block sid="902107542914215">
+            <conditions>
+                <condition id="3" name="On touched object" sid="253367569136522" type="Touch">
+                    <param id="0" name="Object">start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="508952657952661" type="start" />
+                <action id="-16" name="Wait" sid="252628444394888" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="122641459368350" type="System">
+                    <param id="0" name="Layout">Nivel</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

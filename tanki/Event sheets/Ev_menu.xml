@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Ev_menu</name>
+    <events>
+        <event-block sid="9390707736361701">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7876024981498664" type="Touch">
+                    <param id="0" name="Object">btn_credits</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4131894935234236" type="System">
+                    <param id="0" name="Layout">La_credit</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8616055159589917">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6568624297736825" type="Touch">
+                    <param id="0" name="Object">btn_start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8814627561774593" type="System">
+                    <param id="0" name="Layout">La_game</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5549703412517384">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1190861487926783" type="Touch">
+                    <param id="0" name="Object">btn_menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5670970143625644" type="System">
+                    <param id="0" name="Layout">La_menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

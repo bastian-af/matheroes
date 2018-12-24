@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Ev_game</name>
+    <events>
+        <variable constant="0" name="level_speed" sid="9030513916504702" static="0" type="number">0</variable>
+        <variable constant="0" name="level_coletados" sid="3479535824637642" static="0" type="number">0</variable>
+        <variable constant="0" name="level_objetivo" sid="1722824600798794" static="0" type="number">10</variable>
+        <variable constant="0" name="level" sid="7498802074822476" static="0" type="number">1</variable>
+        <variable constant="0" name="linha" sid="8317117316715244" static="0" type="number">0</variable>
+        <variable constant="0" name="jogando" sid="2819577989651867" static="0" type="number">0</variable>
+        <variable constant="0" name="pontos" sid="8503045354828405" static="0" type="number">0</variable>
+        <event-block sid="5717610921117628">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7439582683840009" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6379367538750059" type="System">
+                    <param id="0" name="Variable">linha</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="3108988535547373" type="System">
+                    <param id="0" name="Variable">jogando</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="7543010462715249" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="4397528494132096" type="System">
+                    <param id="0" name="Variable">level</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9216312061467362" type="System">
+                    <param id="0" name="Variable">level_coletados</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="1890636176074847" type="personagem">
+                    <param id="0" name="X">130</param>
+                    <param id="1" name="Y">55</param>
+                </action>
+                <action id="4" name="Set animation" sid="8993275125207055" type="personagem">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="8172772454764876" type="Function">
+                    <param id="0" name="Name">&quot;level_atualizar&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9439803523791363">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6277313127819765" type="personagem">
+                    <param id="0" name="Object">plataforma</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7701565331246873" type="System">
+                    <param id="0" name="Variable">jogando</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4011590432672324" type="personagem">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="428879741574461">
+            <conditions>
+                <condition id="14" name="On tap" sid="2485970687916621" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="6791733696885142" type="System">
+                    <param id="0" name="Variable">jogando</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="933067871332767" type="personagem">
+                    <param id="0" name="Animation">&quot;caindo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3954834013393236">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2890834059256007" type="System">
+                            <param id="0" name="Variable">linha</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1569909779374322" type="personagem">
+                            <param id="0" name="X">130</param>
+                            <param id="1" name="Y">55</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1632024678088289" type="System">
+                            <param id="0" name="Variable">linha</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9613057888485213">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2426502708406212" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="720200870814103" type="System">
+                            <param id="0" name="Variable">linha</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9153935832687581" type="personagem">
+                            <param id="0" name="Y">personagem.Y + 70</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2242313229564619">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5583701709497111" type="System">
+                    <param id="0" name="Interval (seconds)">0.8</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9157573581271944" type="System">
+                    <param id="0" name="Variable">jogando</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="9970947242997941" type="lancador">
+                    <param id="0" name="Object">objetos</param>
+                    <param id="1" name="Layer">&quot;game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="5283365449178831" type="objetos">
+                    <param id="0" name="Frame number">choose(0,1)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="804665053143107" type="objetos">
+                    <param id="0" name="Y">choose(86,240,395)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6162284325234494">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="559686355788417" type="System" />
+                <condition id="-14" name="Compare variable" sid="4564417475114198" type="System">
+                    <param id="0" name="Variable">jogando</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="7965156281925436" type="objetos">
+                    <param id="0" name="X">objetos.X - 3 * level_speed</param>
+                </action>
+                <action id="0" name="Set text" sid="8261438965000104" type="pontos">
+                    <param id="0" name="Text">pontos</param>
+                </action>
+                <action id="0" name="Set text" sid="4221970886688471" type="coletados_display">
+                    <param id="0" name="Text">&quot;Coletados: &quot; &amp; level_coletados</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2826374428750004">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4953819458656789" type="objetos">
+                    <param id="0" name="Object">coletor_objetos</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="141547107735258" type="objetos" />
+            </actions>
+        </event-block>
+        <event-block sid="2091179862034128">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1793681624726316" type="personagem">
+                    <param id="0" name="Object">objetos</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="8566307870676787" type="objetos">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3220252920062319" type="System">
+                    <param id="0" name="Variable">jogando</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="3990095164996583" type="personagem">
+                    <param id="0" name="Animation">&quot;morto&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="1949144585318778" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="107846487534652" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="362838918641008">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2950413717232586" type="personagem">
+                    <param id="0" name="Object">objetos</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="5312778759251516" type="objetos">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="7801865938315237" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9450674619716874" type="objetos" />
+                <action id="-10" name="Add to" sid="1890231947377246" type="System">
+                    <param id="0" name="Variable">level_coletados</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="784755612355407">
+            <conditions>
+                <condition id="0" name="On function" sid="7521664874317864" type="Function">
+                    <param id="0" name="Name">&quot;level_atualizar&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="8482005677373582" type="System">
+                    <param id="0" name="Variable">level</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8280856677263556" type="System">
+                    <param id="0" name="Variable">level_objetivo</param>
+                    <param id="1" name="Value">10 + (2*level)</param>
+                </action>
+                <action id="-9" name="Set value" sid="5526431435329908" type="System">
+                    <param id="0" name="Variable">level_speed</param>
+                    <param id="1" name="Value">1 + (0.1 * level)</param>
+                </action>
+                <action id="-9" name="Set value" sid="6833856390728234" type="System">
+                    <param id="0" name="Variable">level_coletados</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="7480209220026651" type="level_display">
+                    <param id="0" name="Text">&quot;Leve: &quot; &amp; level</param>
+                </action>
+                <action id="0" name="Set text" sid="3423250330186408" type="objetivo_display">
+                    <param id="0" name="Text">&quot;Meta: &quot; &amp; level_objetivo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7661941748739479">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="6011488123023198" type="System">
+                    <param id="0" name="First value">level_coletados</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">level_objetivo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="9831453548249451" type="Function">
+                    <param id="0" name="Name">&quot;level_atualizar&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="285917372831064">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9050422012467806" type="Touch">
+                    <param id="0" name="Object">btn_menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4395522400164844" type="System">
+                    <param id="0" name="Layout">La_menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

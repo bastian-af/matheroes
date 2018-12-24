@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ESTorre</name>
+    <events>
+        <event-block sid="648035342323061">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="550101549459215" type="playerBlue_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="863203810934296" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="911353087485206">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="238435626786578" type="playerBlue_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="392207375447793" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="377619151801826">
+            <conditions>
+                <condition behavior="Platform" id="6" name="On fall" sid="574021664426976" type="playerBlue_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="366148003993040" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="944773447835918">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="222794435393600" type="playerBlue_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="639563612430319" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="273164401113132">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="261040437286334" type="playerBlue_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="150432559519512" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="297072391620305">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="550379757597748" type="playerBlue_stand" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="353506689706849" type="playerBlue_stand">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="344985520412145">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="345888748636823" type="playerBlue_stand" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="946503902777465" type="playerBlue_stand">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="953019564589795">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="527318352099798" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="633828782091870" type="playerBlue_stand">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="297196677910109">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="744246178538045" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="473579903834934" type="playerBlue_stand">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="840237386489892">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="338266866543060" type="playerBlue_stand">
+                    <param id="0" name="Object">Gems2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="693879734869095" type="Gems2" />
+                <action id="-10" name="Add to" sid="863285529436646" type="System">
+                    <param id="0" name="Variable">Coins</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="919306221585998">
+            <conditions>
+                <condition id="17" name="On tap object" sid="948415721281661" type="Touch">
+                    <param id="0" name="Object">Button_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="329500046002869" type="Button_2">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="595339136812388" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="596342145907713" type="System">
+                    <param id="0" name="Layout">World</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316257846652641">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="708137275062915" type="playerBlue_stand">
+                    <param id="0" name="Object">gemverde</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="928411367758162" type="gemverde" />
+                <action id="-10" name="Add to" sid="415917601304755" type="System">
+                    <param id="0" name="Variable">Coins</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="572100921865089">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="909432463873666" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="416302006430925" type="playerBlue_stand">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="557425043766144">
+            <conditions>
+                <condition id="17" name="On tap object" sid="617393771657202" type="Touch">
+                    <param id="0" name="Object">Button_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="741277687417251" type="Button_">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="951279878174948" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="5" name="Set frame" sid="250228516187789" type="Button_">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="537451054181963" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="669507494172403">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="522025883290433" type="playerBlue_stand">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="282052848798999" type="ciegoTalk">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="820560800056801" type="ciegotext">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="881397471945975" type="okCiegoTalk">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="340683601107277">
+            <conditions>
+                <condition id="17" name="On tap object" sid="981249321234750" type="Touch">
+                    <param id="0" name="Object">okCiegoTalk</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="279358644869943" type="okCiegoTalk">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="968399013871245" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="5" name="Set frame" sid="416755370730112" type="okCiegoTalk">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="391517001517772" type="ciegoTalk">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="310193620051002" type="ciegotext">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="175419643722854" type="okCiegoTalk">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="499086542076123" type="playerBlue_stand">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521304696890779">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="231238442871693" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="722309598486908" type="playerBlue_stand">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="782930232540680" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="907249128151275" type="bienvenida">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="871508314001023" type="ciegotext">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="310003639266661" type="ok">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="315434091636414">
+            <conditions>
+                <condition id="17" name="On tap object" sid="492361803613007" type="Touch">
+                    <param id="0" name="Object">ok</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="334526666189073" type="ok" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="606929765305450" type="bienvenida">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="601288033497569" type="ciegotext">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="430661016967642" type="ok">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="871304439152870" type="playerBlue_stand">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="662837599282714">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="873570322156555" type="playerBlue_stand" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="564846136439476" type="TiledBackground32">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="410281785241976">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="449550790735455" type="playerBlue_stand" />
+                <condition behavior="Bullet" id="0" name="Compare speed" sid="582184509198532" type="TiledBackground32">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="981604469259791" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="602351822511677" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

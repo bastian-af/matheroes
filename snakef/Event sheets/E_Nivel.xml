@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E_Nivel</name>
+    <events>
+        <variable constant="0" name="Puntos" sid="768034871081185" static="0" type="number">50</variable>
+        <variable constant="0" name="Cola" sid="534686438789912" static="0" type="number">1</variable>
+        <event-block sid="532131879553863">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="992301868468412" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="227395005670127" type="Bolitas">
+                    <param id="0" name="X">random(700)+50</param>
+                    <param id="1" name="Y">random(400)+50</param>
+                </action>
+                <action id="0" name="Set text" sid="800633838383571" type="Puntos">
+                    <param id="0" name="Text">&quot;Puntaje: &quot;&amp;Puntos</param>
+                </action>
+                <action id="0" name="Set text" sid="559801427311605" type="GameOver">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="638624759615898" type="Bolitas2">
+                    <param id="0" name="X">random(700)+50</param>
+                    <param id="1" name="Y">random(400)+50</param>
+                </action>
+                <action id="2" name="Set at X" sid="395535042352494" type="numerosPrimos">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="2" name="Set at X" sid="551206291813211" type="numerosPrimos">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="2" name="Set at X" sid="433271003534559" type="numerosPrimos">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="2" name="Set at X" sid="142492921455592" type="numerosPrimos">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+                <action id="2" name="Set at X" sid="141161338444183" type="numerosPrimos">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Value">11</param>
+                </action>
+                <action id="2" name="Set at X" sid="360154097044226" type="numerosPrimos">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Value">13</param>
+                </action>
+                <action id="2" name="Set at X" sid="166316545380911" type="numerosPrimos">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Value">17</param>
+                </action>
+                <action id="2" name="Set at X" sid="688673338260537" type="numerosPrimos">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Value">19</param>
+                </action>
+                <action id="2" name="Set at X" sid="404354803878871" type="numerosPrimos">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Value">23</param>
+                </action>
+                <action id="2" name="Set at X" sid="371077425049563" type="numerosPrimos">
+                    <param id="0" name="X">9</param>
+                    <param id="1" name="Value">29</param>
+                </action>
+                <action id="2" name="Set at X" sid="772658047042353" type="numerosPrimos">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="128958810471491" type="numerosPrimos">
+                    <param id="0" name="X">11</param>
+                    <param id="1" name="Value">37</param>
+                </action>
+                <action id="2" name="Set at X" sid="987310776752287" type="numerosPrimos">
+                    <param id="0" name="X">12</param>
+                    <param id="1" name="Value">41</param>
+                </action>
+                <action id="2" name="Set at X" sid="383397499845663" type="numerosPrimos">
+                    <param id="0" name="X">13</param>
+                    <param id="1" name="Value">43</param>
+                </action>
+                <action id="2" name="Set at X" sid="631209043359800" type="numerosPrimos">
+                    <param id="0" name="X">14</param>
+                    <param id="1" name="Value">47</param>
+                </action>
+                <action id="2" name="Set at X" sid="515608198022075" type="numerosPrimos">
+                    <param id="0" name="X">15</param>
+                    <param id="1" name="Value">53</param>
+                </action>
+                <action id="2" name="Set at X" sid="856209879679090" type="numerosPrimos">
+                    <param id="0" name="X">16</param>
+                    <param id="1" name="Value">59</param>
+                </action>
+                <action id="2" name="Set at X" sid="330376497330803" type="numerosPrimos">
+                    <param id="0" name="X">17</param>
+                    <param id="1" name="Value">61</param>
+                </action>
+                <action id="2" name="Set at X" sid="216186780071510" type="numerosPrimos">
+                    <param id="0" name="X">18</param>
+                    <param id="1" name="Value">67</param>
+                </action>
+                <action id="2" name="Set at X" sid="708415701710537" type="numerosPrimos">
+                    <param id="0" name="X">19</param>
+                    <param id="1" name="Value">71</param>
+                </action>
+                <action id="2" name="Set at X" sid="271760837757544" type="numerosPrimos">
+                    <param id="0" name="X">20</param>
+                    <param id="1" name="Value">73</param>
+                </action>
+                <action id="2" name="Set at X" sid="234378477183406" type="numerosPrimos">
+                    <param id="0" name="X">21</param>
+                    <param id="1" name="Value">79</param>
+                </action>
+                <action id="2" name="Set at X" sid="453180253512340" type="numerosPrimos">
+                    <param id="0" name="X">22</param>
+                    <param id="1" name="Value">83</param>
+                </action>
+                <action id="2" name="Set at X" sid="629467292171607" type="numerosPrimos">
+                    <param id="0" name="X">23</param>
+                    <param id="1" name="Value">89</param>
+                </action>
+                <action id="2" name="Set at X" sid="547978401890737" type="numerosPrimos">
+                    <param id="0" name="X">24</param>
+                    <param id="1" name="Value">97</param>
+                </action>
+                <action id="-3" name="Create object" sid="795655743394713" type="System">
+                    <param id="0" name="Object to create">primos</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">Bolitas.X</param>
+                    <param id="3" name="Y">Bolitas.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="108746734445350" type="primos">
+                    <param id="0" name="Text">&quot;&quot;&amp;numerosPrimos.At(Floor(random(0,24)))</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="944882973874366" type="primos">
+                    <param id="0" name="Pin to">Bolitas</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="192628908764653" type="System">
+                    <param id="0" name="Object to create">noPrimos</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">Bolitas2.X</param>
+                    <param id="3" name="Y">Bolitas2.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="100185646384319" type="noPrimos">
+                    <param id="0" name="Text">&quot;&quot;&amp;2*(Floor(random(3,50)))</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="119746270814765" type="noPrimos">
+                    <param id="0" name="Pin to">Bolitas2</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="704086775349158" type="Msg1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="818068353546494" type="Msg1">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="924797497683837">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="244953691746045" type="System" />
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="706152075619557" type="Cabeza">
+                    <param id="0" name="Distance">100*dt</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="719351331154762" type="Cabeza">
+                    <param id="0" name="Angle">0</param>
+                    <param id="1" name="Distance">80*dt</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="564068796404733" type="Cabeza">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">80*dt</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="687806278784535" type="Cabeza">
+                    <param id="0" name="Angle">270</param>
+                    <param id="1" name="Distance">80*dt</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="457293716623721" type="Cabeza">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">80*dt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="635421447125760">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="131225292180760">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="126354430993067">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="409438179789553" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="541004631728079" type="Cabeza">
+                    <param id="0" name="Object">Cuerpo</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="811660395469332">
+            <conditions>
+                <condition id="-18" name="On created" sid="870956917288459" type="Cuerpo" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="494905108490668" type="System">
+                    <param id="0" name="Seconds">Cola</param>
+                </action>
+                <action id="-9" name="Destroy" sid="132784688919439" type="Cuerpo" />
+            </actions>
+        </event-block>
+        <event-block sid="273702586666828">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="675287091277433" type="Cabeza">
+                    <param id="0" name="Object">Bolitas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="301056157254211" type="System">
+                    <param id="0" name="Variable">Puntos</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Set text" sid="639466403305177" type="Puntos">
+                    <param id="0" name="Text">&quot;Puntaje: &quot;&amp;Puntos</param>
+                </action>
+                <action id="-9" name="Destroy" sid="227159034268320" type="Bolitas" />
+                <action id="-9" name="Destroy" sid="953412815143788" type="Bolitas2" />
+                <action id="-9" name="Destroy" sid="285135480868256" type="primos" />
+                <action id="-9" name="Destroy" sid="534834426270113" type="noPrimos" />
+                <action id="-10" name="Add to" sid="276172650675528" type="System">
+                    <param id="0" name="Variable">Cola</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="266379771251269" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-3" name="Create object" sid="506186813744200" type="System">
+                    <param id="0" name="Object to create">Bolitas</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">random(700)+50</param>
+                    <param id="3" name="Y">random(400)+50</param>
+                </action>
+                <action id="-3" name="Create object" sid="423609472399435" type="System">
+                    <param id="0" name="Object to create">Bolitas2</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">random(700)+50</param>
+                    <param id="3" name="Y">random(400)+50</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="903739314624763" type="Cabeza">
+                    <param id="0" name="Object">Tragar</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="771755089809498" type="System">
+                    <param id="0" name="Object to create">primos</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">Bolitas.X</param>
+                    <param id="3" name="Y">Bolitas.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="280681075185401" type="primos">
+                    <param id="0" name="Text">&quot;&quot;&amp;numerosPrimos.At(Floor(random(0,24)))</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="387165984936073" type="primos">
+                    <param id="0" name="Pin to">Bolitas</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="762965430796535" type="System">
+                    <param id="0" name="Object to create">noPrimos</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">Bolitas2.X</param>
+                    <param id="3" name="Y">Bolitas2.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="689797044134408" type="noPrimos">
+                    <param id="0" name="Text">&quot;&quot;&amp;2*(Floor(random(3,50)))</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="125850796658509" type="noPrimos">
+                    <param id="0" name="Pin to">Bolitas2</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="0" name="Set text" sid="617258549835192" type="Msg1">
+                    <param id="0" name="Text">&quot;¡BIEN!&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="549655094433874" type="Msg1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="962999430777515" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="488374935628839" type="Msg1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="648776995709030">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="241369022482077" type="Cabeza">
+                    <param id="0" name="Object">Bolitas2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="466329636163905" type="System">
+                    <param id="0" name="Variable">Puntos</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Destroy" sid="714128631277571" type="Bolitas2" />
+                <action id="-9" name="Destroy" sid="586865524157073" type="Bolitas" />
+                <action id="-9" name="Destroy" sid="639053594688985" type="primos" />
+                <action id="-9" name="Destroy" sid="435232773965289" type="noPrimos" />
+                <action id="-16" name="Wait" sid="496947592722035" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-3" name="Create object" sid="659275809389681" type="System">
+                    <param id="0" name="Object to create">Bolitas2</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">random(700)+50</param>
+                    <param id="3" name="Y">random(400)+50</param>
+                </action>
+                <action id="-3" name="Create object" sid="951619496187962" type="System">
+                    <param id="0" name="Object to create">Bolitas</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">random(700)+50</param>
+                    <param id="3" name="Y">random(400)+50</param>
+                </action>
+                <action id="-3" name="Create object" sid="302903837049916" type="System">
+                    <param id="0" name="Object to create">primos</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">Bolitas.X</param>
+                    <param id="3" name="Y">Bolitas.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="569517556750360" type="primos">
+                    <param id="0" name="Text">&quot;&quot;&amp;numerosPrimos.At(Floor(random(0,24)))</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="655231725825837" type="primos">
+                    <param id="0" name="Pin to">Bolitas</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="825354736309556" type="System">
+                    <param id="0" name="Object to create">noPrimos</param>
+                    <param id="1" name="Layer">&quot;Gusano&quot;</param>
+                    <param id="2" name="X">Bolitas2.X</param>
+                    <param id="3" name="Y">Bolitas2.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="680741304606436" type="noPrimos">
+                    <param id="0" name="Text">&quot;&quot;&amp;2*(Floor(random(3,50)))</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="497086212693144" type="noPrimos">
+                    <param id="0" name="Pin to">Bolitas2</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="930378687156580" type="Msg1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="725902577439949" type="Msg1">
+                    <param id="0" name="Text">&quot;¡NO ES PRIMO!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="990027367365373" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="887777786214918" type="Msg1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="743000150721966">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="461796646863769" type="Cuerpo">
+                    <param id="0" name="Object">Cabeza</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="287152741133904" type="Cuerpo">
+                    <param id="0" name="Instance variable">Preparado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="218398329287762">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="324460295610443" type="Cabeza">
+                    <param id="0" name="Object">Cuerpo</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="713272650375768" type="Cuerpo">
+                    <param id="0" name="Instance variable">Preparado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="175256826983794" type="Cabeza" />
+                <action id="-15" name="Set visible" sid="767031321256039" type="Casa">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="713943495995298" type="Rejugar">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="252736778207593" type="Tragar" />
+            </actions>
+            <sub-events>
+                <event-block sid="606682967887548">
+                    <conditions>
+                        <condition id="-19" name="Pick all" sid="771116345418443" type="System">
+                            <param id="0" name="Object">Cuerpo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="570451759258248" type="Cuerpo" />
+                    </actions>
+                </event-block>
+                <event-block sid="544635039597613">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="203004750249644" type="GameOver">
+                            <param id="0" name="Text">&quot;GAME OVER&quot;&amp;newline&amp;newline&amp;Puntos&amp;&quot;  PTS &quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="483341424430642">
+            <conditions>
+                <condition id="3" name="On touched object" sid="296207960305689" type="Touch">
+                    <param id="0" name="Object">Rejugar</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="879455635695238" type="Rejugar" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="611750561128114" type="System" />
+                <action id="-16" name="Wait" sid="881619859403189" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="647488656686765" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="807972465861406">
+            <conditions>
+                <condition id="3" name="On touched object" sid="835373135695668" type="Touch">
+                    <param id="0" name="Object">Casa</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="730509444445532" type="Casa" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="516214100580538" type="System" />
+                <action id="-16" name="Wait" sid="659208257255659" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="354263539615254" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="233481999710154">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="749000165908010">
+            <conditions>
+                <condition id="-18" name="On created" sid="731996387090597" type="Tragar" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="824606324021129" type="System">
+                    <param id="0" name="Seconds">Cola</param>
+                </action>
+                <action id="-9" name="Destroy" sid="913328626441308" type="Tragar" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

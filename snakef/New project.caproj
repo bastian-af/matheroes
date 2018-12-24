@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3ufataihseby3</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Cabeza" sid="338680971241798">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="850149414696170">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="294172935997031">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="233808307212887">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295713293875761" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Cabeza..png">
+                        <collision-poly>
+                            <point x="0.145161" y="0.172043" />
+                            <point x="0.481183" y="0.0134409" />
+                            <point x="0.836021" y="0.153226" />
+                            <point x="0.983871" y="0.508065" />
+                            <point x="0.827957" y="0.854839" />
+                            <point x="0.481183" y="0.983871" />
+                            <point x="0.153226" y="0.836021" />
+                            <point x="0.0188172" y="0.508065" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cuerpo" sid="469538739259325">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Preparado" sid="125234824831913" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="993627070532261" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Cuerpo..png">
+                        <collision-poly>
+                            <point x="0.145161" y="0.172043" />
+                            <point x="0.481183" y="0.0134409" />
+                            <point x="0.836021" y="0.153226" />
+                            <point x="0.983871" y="0.508065" />
+                            <point x="0.827957" y="0.854839" />
+                            <point x="0.481183" y="0.983871" />
+                            <point x="0.153226" y="0.836021" />
+                            <point x="0.0188172" y="0.508065" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bolitas" sid="864214994050437">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="879903992251983">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629959867668806" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Bolitas..png">
+                        <collision-poly>
+                            <point x="0.225275" y="0.263441" />
+                            <point x="0.5" y="0.145161" />
+                            <point x="0.769231" y="0.268817" />
+                            <point x="0.857143" y="0.532258" />
+                            <point x="0.741758" y="0.768817" />
+                            <point x="0.5" y="0.854839" />
+                            <point x="0.258242" y="0.768817" />
+                            <point x="0.137363" y="0.532258" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="542369840452126">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Puntos" sid="187327401810814">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GameOver" sid="784159420707103">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Rejugar" sid="776435928714675">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="541162432369905" speed="5">
+                    <frame duration="1" hotspotX="0.501577" hotspotY="0.5" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Play..png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Casa" sid="555359257645849">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834169788367169" speed="5">
+                    <frame duration="1" hotspotX="0.501577" hotspotY="0.5" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Casa..png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Titulo" sid="897932378019900">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287263851332867" speed="5">
+                    <frame duration="1" hotspotX="0.505331" hotspotY="0.523669" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Titulo..png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="start" sid="493168780390359">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="256486412840601">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874243569746666" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Tocar_Empezar..png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tragar" sid="611346778256818">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Preparado" sid="585841597286182" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="872915840325530" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Cuerpo..png">
+                        <collision-poly>
+                            <point x="0.145161" y="0.172043" />
+                            <point x="0.481183" y="0.0134409" />
+                            <point x="0.836021" y="0.153226" />
+                            <point x="0.983871" y="0.508065" />
+                            <point x="0.827957" y="0.854839" />
+                            <point x="0.481183" y="0.983871" />
+                            <point x="0.153226" y="0.836021" />
+                            <point x="0.0188172" y="0.508065" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bolitas2" sid="642116638179087">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="902786831647109">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464398394733943" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edu\Desktop\Tutoriales para peques\Snake\Bolitas..png">
+                        <collision-poly>
+                            <point x="0.225275" y="0.263441" />
+                            <point x="0.5" y="0.145161" />
+                            <point x="0.769231" y="0.268817" />
+                            <point x="0.857143" y="0.532258" />
+                            <point x="0.741758" y="0.768817" />
+                            <point x="0.5" y="0.854839" />
+                            <point x="0.258242" y="0.768817" />
+                            <point x="0.137363" y="0.532258" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="numerosPrimos" sid="820045424774499">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="primos" sid="495679896892101">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="215997583299791">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="noPrimos" sid="598609439213471">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="570038454922037">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Msg1" sid="323991356091422">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Nivel.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>E_Nivel.xml</event-sheet>
+        <event-sheet>E_Menu.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="3">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

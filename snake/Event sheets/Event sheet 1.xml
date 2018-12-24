@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="i" sid="234908762419828" static="0" type="number">0</variable>
+        <variable constant="0" name="randomNoprimo" sid="143343433085483" static="0" type="number">0</variable>
+        <variable constant="0" name="timeOffset" sid="4133749299395626" static="0" type="number">2</variable>
+        <variable constant="0" name="SnakeSpeed" sid="8470571016682267" static="0" type="number">0.5</variable>
+        <variable constant="0" name="DebugCheck" sid="1454917094749469" static="0" type="number">0</variable>
+        <variable constant="0" name="BoundsCheck" sid="6627381838686271" static="0" type="number">0</variable>
+        <variable constant="0" name="Segments" sid="3819021673051853" static="0" type="number">3</variable>
+        <variable constant="0" name="yDirection" sid="645353462515238" static="0" type="number">0</variable>
+        <variable constant="0" name="xDirection" sid="6055788832396167" static="0" type="number">0</variable>
+        <variable constant="0" name="snakeY" sid="2336645230455187" static="0" type="number">0</variable>
+        <variable constant="0" name="Desaciertos" sid="551964475291332" static="0" type="number">0</variable>
+        <variable constant="0" name="Aciertos" sid="278497721333079" static="0" type="number">0</variable>
+        <variable constant="0" name="snakeX" sid="5629981655706588" static="0" type="number">0</variable>
+        <comment>At start, set starting position of snake and it&apos;s initial direction</comment>
+        <event-block sid="180317387030938">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7440615321008019" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="622573138902568" type="Array" />
+                <action id="-9" name="Set value" sid="5378474036620671" type="System">
+                    <param id="0" name="Variable">snakeX</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Set value" sid="8033482398301417" type="System">
+                    <param id="0" name="Variable">snakeY</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+                <action id="-9" name="Set value" sid="3128310711361611" type="System">
+                    <param id="0" name="Variable">xDirection</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9531723488585502" type="System">
+                    <param id="0" name="Variable">yDirection</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="558591272875209" type="imprimirAciertos">
+                    <param id="0" name="Text">&quot;Aciertos: &quot;&amp;0</param>
+                </action>
+                <action id="2" name="Set at X" sid="972763576542400" type="numPrimos">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="2" name="Set at X" sid="417293281494664" type="numPrimos">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="2" name="Set at X" sid="416301373002689" type="numPrimos">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="2" name="Set at X" sid="226289853251771" type="numPrimos">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+                <action id="2" name="Set at X" sid="622056931305876" type="numPrimos">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Value">11</param>
+                </action>
+                <action id="2" name="Set at X" sid="882797966520702" type="numPrimos">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Value">13</param>
+                </action>
+                <action id="2" name="Set at X" sid="233201651367293" type="numPrimos">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Value">17</param>
+                </action>
+                <action id="2" name="Set at X" sid="676846746916169" type="numPrimos">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Value">19</param>
+                </action>
+                <action id="2" name="Set at X" sid="229133462843361" type="numPrimos">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Value">23</param>
+                </action>
+                <action id="2" name="Set at X" sid="171164617460461" type="numPrimos">
+                    <param id="0" name="X">9</param>
+                    <param id="1" name="Value">29</param>
+                </action>
+                <action id="2" name="Set at X" sid="842329048413650" type="numPrimos">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="467973372543745" type="numPrimos">
+                    <param id="0" name="X">11</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="862097986020626" type="numPrimos">
+                    <param id="0" name="X">12</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="558733814463547" type="numPrimos">
+                    <param id="0" name="X">13</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="167106714970540" type="numPrimos">
+                    <param id="0" name="X">14</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="681122741985930" type="numPrimos">
+                    <param id="0" name="X">15</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="498685352153736" type="numPrimos">
+                    <param id="0" name="X">16</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="566573246843441" type="numPrimos">
+                    <param id="0" name="X">17</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="327916355722281" type="numPrimos">
+                    <param id="0" name="X">18</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="400851636430838" type="numPrimos">
+                    <param id="0" name="X">19</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="703538674323143" type="numPrimos">
+                    <param id="0" name="X">20</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="216282818239900" type="numPrimos">
+                    <param id="0" name="X">20</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="758212648030172" type="numPrimos">
+                    <param id="0" name="X">20</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="632830666190915" type="numPrimos">
+                    <param id="0" name="X">20</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+                <action id="2" name="Set at X" sid="295632459208236" type="numPrimos">
+                    <param id="0" name="X">20</param>
+                    <param id="1" name="Value">31</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Create food for snake at random positions in our 640x480 viewport.</comment>
+        <event-block sid="5441769734152439">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="3206977258519254" type="System">
+                    <param id="0" name="Interval (seconds)">5-Segments*timeOffset*dt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="3037379749857014" type="System">
+                    <param id="0" name="Object to create">food</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">int(random(19)+1)*32-16</param>
+                    <param id="3" name="Y">int(random(14)+1)*32-16</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="822652959212084" type="food">
+                    <param id="0" name="Instance variable">Estado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="327084011520396" type="System">
+                    <param id="0" name="Object to create">foodNoprimo</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">int(random(19)+1)*32-16</param>
+                    <param id="3" name="Y">int(random(14)+1)*32-16</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="261990950334483" type="foodNoprimo">
+                    <param id="0" name="Instance variable">Estado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>This will update the snake&apos;s position, and increase speed as segments are increased.</comment>
+        <event-block sid="1831898762660157">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1695959228068886" type="System">
+                    <param id="0" name="Interval (seconds)">SnakeSpeed-Segments*timeOffset*dt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9521516165987793" type="head" />
+                <action id="-9" name="Set value" sid="6031109567415342" type="System">
+                    <param id="0" name="Variable">snakeX</param>
+                    <param id="1" name="Value">snakeX+xDirection</param>
+                </action>
+                <action id="-9" name="Set value" sid="4648794202640025" type="System">
+                    <param id="0" name="Variable">snakeY</param>
+                    <param id="1" name="Value">snakeY+yDirection</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1771407435517446">
+                    <conditions>
+                        <condition id="1" name="Compare at XY" sid="6231600857196069" type="Array">
+                            <param id="0" name="X">snakeX</param>
+                            <param id="1" name="Y">snakeY</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="4762839741595199" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>If snake collides with food, add a segment, which will also increase snake speed.</comment>
+                <event-block sid="242598490244928">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="615894991981332" type="head">
+                            <param id="0" name="Object">foodNoprimo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="535044512297808" type="foodNoprimo" />
+                        <action id="3" name="Set at XY" sid="101085493780154" type="Array">
+                            <param id="0" name="X">snakeX</param>
+                            <param id="1" name="Y">snakeY</param>
+                            <param id="2" name="Value">Segments</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="906833790435218" type="noprimo" />
+                        <action id="-10" name="Add to" sid="934769226927507" type="System">
+                            <param id="0" name="Variable">Desaciertos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="337328178138216" type="imprimirDesaciertos">
+                            <param id="0" name="Text">&quot;Desaciertos: &quot;&amp;Desaciertos</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="764658533394073" type="System">
+                            <param id="0" name="Variable">Segments</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="877056810925419" type="food" />
+                        <action id="-9" name="Destroy" sid="345654212747115" type="primo" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="616035373084984">
+                            <conditions>
+                                <condition id="-10" name="For" sid="593176189504097" type="System">
+                                    <param id="0" name="Name">&quot;y1&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">15</param>
+                                </condition>
+                                <condition id="-10" name="For" sid="929891090835176" type="System">
+                                    <param id="0" name="Name">&quot;x1&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">20</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="241982095093938">
+                                    <conditions>
+                                        <condition id="1" name="Compare at XY" sid="229181536287226" type="Array">
+                                            <param id="0" name="X">loopindex(&quot;x1&quot;)</param>
+                                            <param id="1" name="Y">loopindex(&quot;y1&quot;)</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="3" name="Set at XY" sid="345904860456923" type="Array">
+                                            <param id="0" name="X">loopindex(&quot;x1&quot;)</param>
+                                            <param id="1" name="Y">loopindex(&quot;y1&quot;)</param>
+                                            <param id="2" name="Value">Array.At(loopindex(&quot;x1&quot;),loopindex(&quot;y1&quot;))+1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="7155876803441879">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2593598369324642" type="head">
+                            <param id="0" name="Object">food</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4223067750892076" type="food" />
+                        <action id="3" name="Set at XY" sid="5348120657100861" type="Array">
+                            <param id="0" name="X">snakeX</param>
+                            <param id="1" name="Y">snakeY</param>
+                            <param id="2" name="Value">Segments</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="538971595126859" type="System">
+                            <param id="0" name="Variable">Aciertos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="640058728305725" type="imprimirAciertos">
+                            <param id="0" name="Text">&quot;Aciertos: &quot;&amp;Aciertos</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="3042836479154325" type="System">
+                            <param id="0" name="Variable">Segments</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="552692773645594" type="primo" />
+                        <action id="-9" name="Destroy" sid="415887615602132" type="foodNoprimo" />
+                        <action id="-9" name="Destroy" sid="372987644782243" type="noprimo" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8879765203259241">
+                            <conditions>
+                                <condition id="-10" name="For" sid="8774986927887386" type="System">
+                                    <param id="0" name="Name">&quot;y1&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">15</param>
+                                </condition>
+                                <condition id="-10" name="For" sid="5671396069389301" type="System">
+                                    <param id="0" name="Name">&quot;x1&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">20</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="9283117518814154">
+                                    <conditions>
+                                        <condition id="1" name="Compare at XY" sid="5797895203269031" type="Array">
+                                            <param id="0" name="X">loopindex(&quot;x1&quot;)</param>
+                                            <param id="1" name="Y">loopindex(&quot;y1&quot;)</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="3" name="Set at XY" sid="9331631821928402" type="Array">
+                                            <param id="0" name="X">loopindex(&quot;x1&quot;)</param>
+                                            <param id="1" name="Y">loopindex(&quot;y1&quot;)</param>
+                                            <param id="2" name="Value">Array.At(loopindex(&quot;x1&quot;),loopindex(&quot;y1&quot;))+1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Check to see if snake leaves viewport</comment>
+                <event-block sid="7997070654435307">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="4151787873014137" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set at XY" sid="86170211943459" type="Array">
+                            <param id="0" name="X">snakeX</param>
+                            <param id="1" name="Y">snakeY</param>
+                            <param id="2" name="Value">Segments</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8197658539938647" type="System">
+                            <param id="0" name="Variable">BoundsCheck</param>
+                            <param id="1" name="Value">(snakeY&lt;1 | snakeY&gt;15) | (snakeX&lt;1 | snakeX &gt; 20)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8460264089707978">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="685632998817118" type="System">
+                                    <param id="0" name="Variable">BoundsCheck</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="5201322572797591" type="System">
+                                    <param id="0" name="Layout">GameOver</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Iterate through array and create snake segments</comment>
+                <event-block sid="1308208126393339">
+                    <conditions>
+                        <condition id="-10" name="For" sid="9622740987713824" type="System">
+                            <param id="0" name="Name">&quot;j&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">15</param>
+                        </condition>
+                        <condition id="-10" name="For" sid="5428967125720101" type="System">
+                            <param id="0" name="Name">&quot;i&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">20</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8808037798380536">
+                            <conditions>
+                                <condition id="1" name="Compare at XY" sid="6632291371151529" type="Array">
+                                    <param id="0" name="X">loopindex(&quot;i&quot;)</param>
+                                    <param id="1" name="Y">loopindex(&quot;j&quot;)</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Set at XY" sid="8943091596328067" type="Array">
+                                    <param id="0" name="X">loopindex(&quot;i&quot;)</param>
+                                    <param id="1" name="Y">loopindex(&quot;j&quot;)</param>
+                                    <param id="2" name="Value">Array.At(loopindex(&quot;i&quot;),loopindex(&quot;j&quot;))-1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="6343214215212213" type="System">
+                                    <param id="0" name="Object to create">head</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">32*LoopIndex(&quot;i&quot;)-16</param>
+                                    <param id="3" name="Y">32*LoopIndex(&quot;j&quot;)-16</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Set direction</comment>
+        <event-block sid="3207783402289688">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6358240128304187" type="System">
+                    <param id="0" name="Variable">yDirection</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4933217665294186">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5243110880077568" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1426778455859827" type="System">
+                            <param id="0" name="Variable">xDirection</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7764876007772985" type="System">
+                            <param id="0" name="Variable">yDirection</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6617082304161573">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1854425400960244" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2971716080551129" type="System">
+                            <param id="0" name="Variable">xDirection</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="573163559469032" type="System">
+                            <param id="0" name="Variable">yDirection</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="755960242912559">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7524520295533097" type="System">
+                    <param id="0" name="Variable">xDirection</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1654707598061865">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2624177048126853" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5878508644578894" type="System">
+                            <param id="0" name="Variable">xDirection</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4398851671714139" type="System">
+                            <param id="0" name="Variable">yDirection</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4021062486895146">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3767375944884367" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4693528042676562" type="System">
+                            <param id="0" name="Variable">xDirection</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8305219604012356" type="System">
+                            <param id="0" name="Variable">yDirection</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Just some test debug</comment>
+        <event-block sid="1643285318019686">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="610828656340915" type="System">
+                    <param id="0" name="Variable">DebugCheck</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6371195690877838">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="6009819167385684" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4303011162235872" type="snakepos">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="408287176815239" type="snakepos">
+                            <param id="0" name="Text">snakeX &amp; &quot;, &quot; &amp; snakeY &amp; &quot;Segments:&quot; &amp; Segments</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3746787926722856">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7481395256885174" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7200441603383752" type="snakepos">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="782905555376582">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="586747848884465" type="food">
+                    <param id="0" name="Instance variable">Estado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="697209314365498" type="System">
+                    <param id="0" name="Variable">i</param>
+                    <param id="1" name="Value">Floor(random(0,24))</param>
+                </action>
+                <action id="-3" name="Create object" sid="134410887304030" type="System">
+                    <param id="0" name="Object to create">primo</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">food.X</param>
+                    <param id="3" name="Y">food.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="980382670153796" type="primo">
+                    <param id="0" name="Text">&quot;&quot;&amp;numprimos.At(i)</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="643981120120596" type="primo">
+                    <param id="0" name="Pin to">food</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="292166005677657" type="food">
+                    <param id="0" name="Instance variable">Estado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="266429189591411">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="781918550253793" type="foodNoprimo">
+                    <param id="0" name="Instance variable">Estado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="268170044448395" type="System">
+                    <param id="0" name="Variable">randomNoprimo</param>
+                    <param id="1" name="Value">2*(Floor(random(3,99)))</param>
+                </action>
+                <action id="-3" name="Create object" sid="435414648636979" type="System">
+                    <param id="0" name="Object to create">noprimo</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">foodNoprimo.X</param>
+                    <param id="3" name="Y">foodNoprimo.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="396193518249834" type="noprimo">
+                    <param id="0" name="Text">&quot;&quot;&amp;randomNoprimo</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="351874053430081" type="noprimo">
+                    <param id="0" name="Pin to">foodNoprimo</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="757993539022954" type="foodNoprimo">
+                    <param id="0" name="Instance variable">Estado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

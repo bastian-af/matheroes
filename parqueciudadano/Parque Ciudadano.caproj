@@ -1,0 +1,2289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Parque Ciudadano</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1fijocqmpjcop</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="pixellate">Pixellate</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="set1_background" sid="588297095989918">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="370879401299694" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Backgrounds\set1_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uncolored_forest" sid="310554263020873">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="427484343150379" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1.03243" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\Samples\uncolored_forest.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground6" sid="551595066565074">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="553769924515715">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="464069987207780">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+        </object-type>
+        <object-type name="playerBlue_stand" sid="543577934114559">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="264792348484233">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="455545158622600">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="959875574756985">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="125078548183278" speed="0">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_stand.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="Walk" pingpong="1" repeatcount="0" repeatto="0" sid="773576520856061" speed="8">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_walk1.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_walk2.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_walk3.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="634956284799988" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_fall.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="446364060448455" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_hit.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="581229053144128">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="tileGreen_" sid="268817345988188">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="627813164239544">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240414974261749" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_15.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_16.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colored_forest" sid="862300215018090">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255062609458718" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\Samples\colored_forest.png">
+                        <collision-poly>
+                            <point x="0.000976563" y="0.00097561" />
+                            <point x="0.999023" y="0.00097561" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tituloe1" sid="804685949779417">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="green" sid="653561249851188">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131497900910520" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\pixeluipack\9-Slice\Colored\green.png">
+                        <collision-poly>
+                            <point x="0.0208333" y="0.0208333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.979167" y="0.0208333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.979167" y="0.979167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0208333" y="0.979167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\pixeluipack\9-Slice\Colored\green_pressed.png">
+                        <collision-poly>
+                            <point x="0.0208333" y="0.0208333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.979167" y="0.0208333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.979167" y="0.979167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0208333" y="0.979167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jugar" sid="211978061623294">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="tileGreen_2" sid="728561365202939">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443907277159783" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plantGreen_" sid="866539241142182">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141871404583053" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Other\plantGreen_4.png">
+                        <collision-poly>
+                            <point x="0.0689655" y="0.04" />
+                            <point x="0.482759" y="0" />
+                            <point x="0.62069" y="0.22" />
+                            <point x="0.827586" y="0.5" />
+                            <point x="0.758621" y="0.86" />
+                            <point x="0.482759" y="1" />
+                            <point x="0.275862" y="0.84" />
+                            <point x="0.344828" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="530445642529070">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="426784461499051">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="648557081203192">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_06.png" />
+        </object-type>
+        <object-type name="tileGreen_3" sid="976058687125966">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="624594002289231">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="813875728360284" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_02.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.08" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.08" />
+                            <point x="1" y="0.5" />
+                            <point x="0.953125" y="0.94" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.046875" y="0.94" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_4" sid="129330878172869">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566645429896245" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_14.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="playerRed_stand" sid="179523866728538">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="403157102091586">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="546170047761553">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="357141609562014" speed="0">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_stand.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" />
+                </animation>
+                <animation framecount="3" loop="1" name="walk" pingpong="1" repeatcount="1" repeatto="0" sid="741309551915852" speed="8">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk1.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk2.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk3.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="fall" pingpong="0" repeatcount="1" repeatto="0" sid="209622416619748" speed="0">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_fall.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="366627452921834" speed="0">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_5" sid="737449014897067">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="400907959137395">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396892649491412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_6" sid="753194001468470">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="799421176610164">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="940482370920245" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tree" sid="692449426654996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="634564365615742" speed="5">
+                    <frame duration="1" hotspotX="0.503876" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\PNG\tree05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tree2" sid="172515868598043">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692702720913390" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\PNG\tree13.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grass" sid="553832894943103">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="140198289035839" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\PNG\grass6.png">
+                        <collision-poly>
+                            <point x="0.342105" y="0.371429" />
+                            <point x="0.5" y="0.314286" />
+                            <point x="0.736842" y="0.285714" />
+                            <point x="0.763158" y="0.485714" />
+                            <point x="0.868421" y="0.857143" />
+                            <point x="0.5" y="0.971429" />
+                            <point x="0.131579" y="0.857143" />
+                            <point x="0.157895" y="0.485714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grass2" sid="431654144995761">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="289801932726618" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\PNG\grass5.png">
+                        <collision-poly>
+                            <point x="0.384615" y="0.344828" />
+                            <point x="0.5" y="0.0344828" />
+                            <point x="0.576923" y="0.37931" />
+                            <point x="0.615385" y="0.482759" />
+                            <point x="0.846154" y="0.862069" />
+                            <point x="0.5" y="0.965517" />
+                            <point x="0.153846" y="0.862069" />
+                            <point x="0.0384615" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fence" sid="810234946246471">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474556829362011" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\PNG\fence.png">
+                        <collision-poly>
+                            <point x="0.0703125" y="0.102273" />
+                            <point x="0.5" y="0.284091" />
+                            <point x="0.945313" y="0.0795455" />
+                            <point x="0.976563" y="0.5" />
+                            <point x="0.945313" y="0.920455" />
+                            <point x="0.5" y="0.772727" />
+                            <point x="0.078125" y="0.886364" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sun" sid="871461480769362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="113035013156711" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\PNG\sun.png">
+                        <collision-poly>
+                            <point x="0.252874" y="0.255814" />
+                            <point x="0.494253" y="0.151163" />
+                            <point x="0.758621" y="0.244186" />
+                            <point x="0.885057" y="0.5" />
+                            <point x="0.781609" y="0.77907" />
+                            <point x="0.494253" y="0.895349" />
+                            <point x="0.229885" y="0.767442" />
+                            <point x="0.137931" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorKnob" sid="373021726644715">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186038576888368" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorKnob.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorOpen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorTop" sid="985736018999060">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609014753772473" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorTop.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.428571" />
+                            <point x="0.571429" y="0.428571" />
+                            <point x="0.828571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.171429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorOpenTop.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coinGold" sid="534269360801605">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376737510106947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Base pack\Items\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coinstext" sid="141451014864865">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="type" sid="955816634032222" type="string" />
+            </instance-variables>
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="signRight" sid="436991274284150">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="634944389206380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Base pack\Tiles\signRight.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.5" y="0.142857" />
+                            <point x="0.828571" y="0.171429" />
+                            <point x="0.885714" y="0.5" />
+                            <point x="0.714286" y="0.714286" />
+                            <point x="0.5" y="0.6" />
+                            <point x="0.3" y="0.7" />
+                            <point x="0.0571429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bush" sid="242426013315256">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946076873607936" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Mushroom expansion\PNG\bush.png">
+                        <collision-poly>
+                            <point x="0.157407" y="0.472222" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.87963" y="0.361111" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.101852" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="playerGreen_roll" sid="657225581455792">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483799814224795" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Green\playerGreen_roll.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.8" />
+                            <point x="0" y="0.8" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.8" />
+                            <point x="0" y="0.8" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="playerGrey_roll" sid="491285854163424">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="puerta1" sid="754748653893371" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847502994767812" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Grey\playerGrey_roll.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Grey\playerGrey_walk1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="playerRed_roll" sid="795215630159625">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="607535771572008" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_roll.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk1.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sun2" sid="947140316608126">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="157300523432222" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\PNG\sun.png">
+                        <collision-poly>
+                            <point x="0.252874" y="0.255814" />
+                            <point x="0.494253" y="0.151163" />
+                            <point x="0.758621" y="0.244186" />
+                            <point x="0.885057" y="0.5" />
+                            <point x="0.781609" y="0.77907" />
+                            <point x="0.494253" y="0.895349" />
+                            <point x="0.229885" y="0.767442" />
+                            <point x="0.137931" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="opacidad" sid="855626239787584">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_27.png" />
+        </object-type>
+        <object-type name="uncolored_peaks" sid="593326206353699">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392728992170638" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\kenney-backgroundelements\Samples\uncolored_peaks.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorKnob2" sid="591300350170768">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="720713186408977" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorKnob.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorOpen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorKnob3" sid="436323483197571">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508349863977125" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorKnob.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorOpen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uncolored_forest2" sid="428900344278794">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="251719538466189" speed="0">
+                    <frame duration="1" hotspotX="0.800312" hotspotY="1.03804" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\Samples\uncolored_forest.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground9" sid="776063602572106">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="287312410935930">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+        </object-type>
+        <object-type name="bienvenida" sid="239030798829867">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="906765035971762" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501639" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\widow\Window - Copy_10.png">
+                        <collision-poly>
+                            <point x="0.011194" y="0.0196721" />
+                            <point x="0.5" y="0.00327869" />
+                            <point x="0.990672" y="0.0163934" />
+                            <point x="0.990672" y="0.983607" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00932836" y="0.983607" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ok" sid="729211356685556">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725038955667782" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_42.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_47.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tituloe2" sid="294182468202652">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="Button2" sid="910245913073159">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="366509596968989" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_46.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.902174" y="0.09375" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_47.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.902174" y="0.09375" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_49.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground7" sid="493033833149371">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="294694308230605">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+        </object-type>
+        <object-type name="TiledBackground10" sid="197483471773529">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="332585784335078">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+        </object-type>
+        <object-type name="doorTop2" sid="174258519921303">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="958002490906341" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorTop.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.428571" />
+                            <point x="0.571429" y="0.428571" />
+                            <point x="0.828571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.171429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorOpenTop.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorTop3" sid="655387363925879">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207266814057438" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorTop.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.428571" />
+                            <point x="0.571429" y="0.428571" />
+                            <point x="0.828571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.171429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorOpenTop.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gems" sid="374248090426175">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="619747571256443" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gems2" sid="829560557177001">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="336339013996154" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="602981664711701">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground5" sid="316380665225368">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\grassHalfRight.png" />
+        </object-type>
+        <object-type name="solid" sid="545104744227405">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="275627778994645">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_02.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="290291947205244">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="536726598475937">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_27.png" />
+        </object-type>
+        <object-type name="TiledBackground11" sid="867679546813685">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_03.png" />
+        </object-type>
+        <object-type name="TiledBackground12" sid="268828140296311">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="701050762452423">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_02.png" />
+        </object-type>
+        <object-type name="TiledBackground13" sid="393741225545199">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="176136505788952">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_01.png" />
+        </object-type>
+        <object-type name="tileBrown_" sid="863042698738809">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="970942310626148">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="903404603295282" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_17.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_16.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jump" sid="456436727011532">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="547892992614745">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_02.png" />
+        </object-type>
+        <object-type name="tierrathrow" sid="256419668267594">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_27.png" />
+        </object-type>
+        <object-type name="tileBrown_2" sid="897846236350010">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="361018460609615">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224824980587756" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_01.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="uncolored_piramids" sid="563379168557148">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385437008779054" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507343" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\kenney-backgroundelements\Samples\uncolored_piramids.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grass3" sid="242781079716335">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="807650680608645" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\kenney-backgroundelements\PNG\grass3.png">
+                        <collision-poly>
+                            <point x="0.342105" y="0.371429" />
+                            <point x="0.5" y="0.314286" />
+                            <point x="0.736842" y="0.285714" />
+                            <point x="0.763158" y="0.485714" />
+                            <point x="0.868421" y="0.857143" />
+                            <point x="0.5" y="0.971429" />
+                            <point x="0.131579" y="0.857143" />
+                            <point x="0.157895" y="0.485714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grass4" sid="646385690754454">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300044952754463" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\kenney-backgroundelements\PNG\grass1.png">
+                        <collision-poly>
+                            <point x="0.384615" y="0.344828" />
+                            <point x="0.5" y="0.0344828" />
+                            <point x="0.576923" y="0.37931" />
+                            <point x="0.615385" y="0.482759" />
+                            <point x="0.846154" y="0.862069" />
+                            <point x="0.5" y="0.965517" />
+                            <point x="0.153846" y="0.862069" />
+                            <point x="0.0384615" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tree3" sid="996474000422763">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="999410270085175" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\kenney-backgroundelements\PNG\tree07.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.113043" />
+                            <point x="0.5" y="0" />
+                            <point x="0.789063" y="0.117391" />
+                            <point x="0.992188" y="0.5" />
+                            <point x="0.726563" y="0.847826" />
+                            <point x="0.5" y="0.995652" />
+                            <point x="0.273438" y="0.847826" />
+                            <point x="0.0078125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tower_beige" sid="805911626267269">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994682558593640" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\kenney-backgroundelements\PNG\tower_beige.png">
+                        <collision-poly>
+                            <point x="0.348485" y="0.101322" />
+                            <point x="0.5" y="0.0176211" />
+                            <point x="0.636364" y="0.105727" />
+                            <point x="0.863636" y="0.497797" />
+                            <point x="0.984848" y="0.995595" />
+                            <point x="0.5" y="0.995595" />
+                            <point x="0.0909091" y="0.973568" />
+                            <point x="0.166667" y="0.497797" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cloud" sid="529482457542921">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="471077538381509">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="484955902450840" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503704" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\kenney-backgroundelements\PNG\cloud5.png">
+                        <collision-poly>
+                            <point x="0.155462" y="0.274074" />
+                            <point x="0.5" y="0.0592593" />
+                            <point x="0.794118" y="0.362963" />
+                            <point x="0.852941" y="0.496296" />
+                            <point x="0.957983" y="0.925926" />
+                            <point x="0.5" y="0.985185" />
+                            <point x="0.0966387" y="0.82963" />
+                            <point x="0.0462185" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground14" sid="571245030766813">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="823492195012638">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_03.png" />
+        </object-type>
+        <object-type name="tileBrown_3" sid="195337428955574">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="350663803490780" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_18.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_4" sid="116770321464626">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="201925804939459" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_09.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_5" sid="558690571380592">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="847878998754492">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104691220909847" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_15.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_6" sid="873004377855739">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="233582109764748" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_14.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="castleCliffLeft" sid="850193800852560">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="921020598281487">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="602481335030688">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892156664699261" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castleCliffLeft.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.228571" y="0.771429" />
+                            <point x="0.0285714" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="castleCliffRight" sid="373955181939963">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="701694398768554">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="850106554884265">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="909856335352796" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castleCliffRight.png">
+                        <collision-poly>
+                            <point x="0.0428571" y="0.0428571" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="0.971429" y="0.5" />
+                            <point x="0.771429" y="0.771429" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="castleMid" sid="874210951699391">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="145243060210248">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="919000983571905">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310278910422653" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castleMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="buttonGreen" sid="392270466790010">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="159074289843349">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522887502124587" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Items\buttonGreen.png">
+                        <collision-poly>
+                            <point x="0.371429" y="0.371429" />
+                            <point x="0.5" y="0.342857" />
+                            <point x="0.628571" y="0.371429" />
+                            <point x="0.785714" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.214286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Items\buttonGreen_pressed.png">
+                        <collision-poly>
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.628571" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flagGreen" sid="844895073415133">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="621292597724317">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535090432435021" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Items\flagGreenHanging.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.357143" y="0.642857" />
+                            <point x="0.342857" y="0.5" />
+                            <point x="0.342857" y="0.342857" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Items\flagGreen2.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0.0857143" />
+                            <point x="0.757143" y="0.242857" />
+                            <point x="0.3" y="0.5" />
+                            <point x="0.471429" y="0.471429" />
+                            <point x="0.5" y="0.471429" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="castle" sid="306298342930277">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="144665648901339">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136346823774322" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castle.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="houseBeigeBottomLeft" sid="515405490718484">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425122180144915" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeigeBottomLeft.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeigeBottomRight.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="houseBeigeBottomMid" sid="610593509335238">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293054433739847" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeigeBottomMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chimneyThin" sid="990975526625987">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587750735312116" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\chimneyThin.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.285714" />
+                            <point x="0.714286" y="0.285714" />
+                            <point x="0.8" y="0.5" />
+                            <point x="0.728571" y="0.728571" />
+                            <point x="0.5" y="1" />
+                            <point x="0.271429" y="0.728571" />
+                            <point x="0.2" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="roofRedTopMid" sid="479955351377853">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="506444344504358" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="houseBeigeAlt" sid="143443409929178">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="201285931175229" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeigeAlt.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeigeAlt2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="houseBeigeMidLeft" sid="870911885569947">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373893463014971" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeigeMidLeft.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeigeMidRight.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="windowLowCheckered" sid="322780438930503">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647495420785920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\windowLowCheckered.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.3" />
+                            <point x="0.5" y="0.257143" />
+                            <point x="0.7" y="0.3" />
+                            <point x="0.9" y="0.5" />
+                            <point x="0.928571" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0571429" y="0.942857" />
+                            <point x="0.0857143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorKnobE1" sid="165033460310942">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="861322017421753" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorKnobAlt.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorOpen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="houseBeige" sid="109271544502977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="223077943183703" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeige.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorWindowTop" sid="809127025379687">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304638401620134" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorWindowTop.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.428571" />
+                            <point x="0.571429" y="0.428571" />
+                            <point x="0.828571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.171429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\doorOpenTop.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="roofRedTopLeft" sid="879708289005945">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="691644564498224" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopLeft.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.157143" y="0.842857" />
+                            <point x="0.157143" y="0.157143" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopRight.png">
+                        <collision-poly>
+                            <point x="0.842857" y="0.842857" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.842857" y="0.157143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="houseBeige2" sid="229681392527000">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445617758083343" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\houseBeige.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="roofRedTopMid2" sid="949252828466191">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="617745274368277" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="roofRedMid" sid="350146647763029">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="328369504959165" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="roofRedTopLeft2" sid="494808429737057">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="845278721116765" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopLeft.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.157143" y="0.842857" />
+                            <point x="0.157143" y="0.157143" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopRight.png">
+                        <collision-poly>
+                            <point x="0.842857" y="0.842857" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.842857" y="0.157143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground3" sid="463398236375947">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopMid.png" />
+        </object-type>
+        <object-type name="TiledBackground15" sid="643840985280600">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedMid.png" />
+        </object-type>
+        <object-type name="TiledBackground16" sid="282591574007099">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedRight.png" />
+        </object-type>
+        <object-type name="TiledBackground17" sid="815997248306883">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopLeft.png" />
+        </object-type>
+        <object-type name="roofRedTopLeft3" sid="785366844509627">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579029095241313" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopLeft.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.157143" y="0.842857" />
+                            <point x="0.157143" y="0.157143" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopRight.png">
+                        <collision-poly>
+                            <point x="0.842857" y="0.842857" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.842857" y="0.157143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground18" sid="223186647847659">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopRight.png" />
+        </object-type>
+        <object-type name="roofRedTopRight" sid="614498200318026">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403313537588963" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\roofRedTopRight.png">
+                        <collision-poly>
+                            <point x="0.842857" y="0.842857" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.842857" y="0.157143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gems3" sid="150166803556699">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="339204709495167">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488395420388490" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_2" sid="150316069353637">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240908197907113" speed="0">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_50.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_51.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gems4" sid="352147419594409">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391017472369663" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ok2" sid="760666954922837">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="617712890079704" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_42.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_47.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greyTalk" sid="672381068486158">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731521210919360" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\uipack_fixed\PNG\grey_panel.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="graytext" sid="983703586296259">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="okGrayTalk" sid="478989612560379">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="858852026924474" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_42.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_47.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gems5" sid="452338487291560">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731214218516236" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gemlvl2" sid="974311383071093">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534480915671593" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gemlvl3" sid="834619704824276">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852920396567122" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground19" sid="434068167536214">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite" sid="261949559175239">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552061563923953" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_roll.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground20" sid="456538648869684">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Platform" sid="180404074895899">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\pablo\Desktop\plat.png" />
+        </object-type>
+        <object-type name="eggicon" sid="998474662356958">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="796642528908331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\egg-icon.png">
+                        <collision-poly>
+                            <point x="0.242188" y="0.242188" />
+                            <point x="0.5" y="0" />
+                            <point x="0.761719" y="0.238281" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.816406" y="0.816406" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.160156" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground21" sid="604127313851246">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="255291998600508">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="bananas" sid="804033180308556">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="314751227819940" speed="5">
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\bananas.png">
+                        <collision-poly>
+                            <point x="0.165165" y="0.247748" />
+                            <point x="0.498498" y="0.301802" />
+                            <point x="0.897898" y="0.153153" />
+                            <point x="0.996997" y="0.5" />
+                            <point x="0.876877" y="0.815315" />
+                            <point x="0.498498" y="1" />
+                            <point x="0.171171" y="0.743243" />
+                            <point x="0.045045" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="manzana" sid="425410556374548">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854994125898228" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\manzana.png">
+                        <collision-poly>
+                            <point x="0.116279" y="0.109589" />
+                            <point x="0.5" y="0.0945205" />
+                            <point x="0.741279" y="0.243836" />
+                            <point x="0.991279" y="0.5" />
+                            <point x="0.867733" y="0.875342" />
+                            <point x="0.5" y="0.957534" />
+                            <point x="0.140988" y="0.867123" />
+                            <point x="0.00436047" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground22" sid="233103434434542">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\hudHeart_full.png" />
+        </object-type>
+        <object-type name="tituloe3" sid="568947666372838">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="FastFoodicon_" sid="311630403586215">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296259106620036" speed="5">
+                    <frame duration="1" hotspotX="0.484375" hotspotY="0.53125" original-source="C:\Users\pablo\Desktop\Fast-Food-icon_30334.png">
+                        <collision-poly>
+                            <point x="0.186364" y="0.222727" />
+                            <point x="0.490909" y="0.0545455" />
+                            <point x="0.645455" y="0.372727" />
+                            <point x="0.954545" y="0.527273" />
+                            <point x="0.936364" y="0.972727" />
+                            <point x="0.490909" y="0.995455" />
+                            <point x="0.0818182" y="0.936364" />
+                            <point x="0.0272727" y="0.527273" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CUMPLEAÑOS" sid="274671311052442">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355534950090781" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\pablo\Desktop\CUMPLEAÑOS (55).png">
+                        <collision-poly>
+                            <point x="0.19375" y="0.223343" />
+                            <point x="0.5" y="0.0518732" />
+                            <point x="0.75625" y="0.28098" />
+                            <point x="0.785" y="0.5" />
+                            <point x="0.86125" y="0.840058" />
+                            <point x="0.5" y="0.920749" />
+                            <point x="0.1575" y="0.818444" />
+                            <point x="0.13375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tierratrans" sid="992116589836861">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_27.png" />
+        </object-type>
+        <object-type name="TiledBackground23" sid="481162277715654">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castleCenter.png" />
+        </object-type>
+        <object-type name="TiledBackground24" sid="830438629607544">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground25" sid="211099629217101">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="903349194374879">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castleHalfLeft.png" />
+        </object-type>
+        <object-type name="TiledBackground26" sid="834902401935487">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="289169876468763">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castleHalfRight.png" />
+        </object-type>
+        <object-type name="dirtMid" sid="109188466847787">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="749361138206651" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\dirtMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tochLit" sid="997502838938651">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="132618727020689" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\tochLit.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0428571" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.971429" />
+                            <point x="0.3" y="0.7" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="castleMid2" sid="102977463773633">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126475592954343" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castleMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground27" sid="665505967179735">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="852874274699845">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\castleMid.png" />
+        </object-type>
+        <object-type name="TiledBackground28" sid="718217503179702">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="door_openMid" sid="488572670233599">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="884073239556689" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\door_openMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door_openTop" sid="454056248636512">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180990605127880" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\door_openTop.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.428571" />
+                            <point x="0.571429" y="0.428571" />
+                            <point x="0.828571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.171429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="window" sid="298743977100537">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363704927838302" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\window.png">
+                        <collision-poly>
+                            <point x="0.171429" y="0.171429" />
+                            <point x="0.5" y="0.0428571" />
+                            <point x="0.828571" y="0.171429" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="0.928571" y="0.928571" />
+                            <point x="0.5" y="0.971429" />
+                            <point x="0.0571429" y="0.942857" />
+                            <point x="0.0571429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="windowCheckered" sid="188418118997459">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="347374495425414" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Buildings expansion\Tiles\windowCheckered.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.842857" y="0.157143" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="0.928571" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0571429" y="0.942857" />
+                            <point x="0.0571429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colored_forest2" sid="803278489305447">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196770386902504" speed="5">
+                    <frame duration="1" hotspotX="0.00125313" hotspotY="-2.69608" original-source="C:\Users\pablo\Desktop\assets\kenney-backgroundelements\Samples\colored_forest.png">
+                        <collision-poly>
+                            <point x="0.00223214" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00125313" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground29" sid="969777864056618">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="410611922201490">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_02.png" />
+        </object-type>
+        <object-type name="TiledBackground30" sid="975709361579076">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="772989559876197">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\grassHalfLeft.png" />
+        </object-type>
+        <object-type name="TiledBackground31" sid="576268174164982">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="532467558408695">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-art-complete-pack-0\Base pack\Tiles\grassHalfRight.png" />
+        </object-type>
+        <object-type name="Audio" sid="654516880076046">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Gemse1" sid="211473709401400">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="515074258760235" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gem1" sid="829142899915257">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="bienvenidaverde" sid="604964402176447">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372428189329661" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501639" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\widow\Window - Copy_10.png">
+                        <collision-poly>
+                            <point x="0.011194" y="0.0196721" />
+                            <point x="0.5" y="0.00327869" />
+                            <point x="0.990672" y="0.0163934" />
+                            <point x="0.990672" y="0.983607" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00932836" y="0.983607" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gem2" sid="858754198867380">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="gem3" sid="831803025140452">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="gem4" sid="527281431623713">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="ok3" sid="781715866022978">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445593537240034" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_42.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_47.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pacoTalk2" sid="402130554935599">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="899508699179008" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\uipack_fixed\PNG\grey_panel.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pacotext2" sid="880573261222533">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="okPacoTalk" sid="827692712660023">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915750681446905" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_42.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_47.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gemverde" sid="169041140284681">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346855759983506" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="instruccionperm" sid="340598411618653">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="TiledBackground32" sid="105101499659445">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="596208043903989">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="317354686082698">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground33" sid="146970053848510">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_74.png" />
+        </object-type>
+        <object-type name="Button_" sid="798229288516506">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="953833475414603" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_74.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_75.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ciegoTalk" sid="538555169091660">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979831540591587" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\uipack_fixed\PNG\grey_panel.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="okCiegoTalk" sid="652073326605330">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306203665967606" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_42.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pucv Pablo\7mo semestre\Educativo\assets\platformer-assets\Platformer\GUI\gui\button\Button_47.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ciegotext" sid="710244694666884">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="coinstext2" sid="703578441214450">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="type" sid="485550530346739" type="string" />
+            </instance-variables>
+            <texture original-source="C:\Users\pablo\Desktop\assets\platformer-assets\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>World.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>Etapa1.xml</layout>
+        <layout>Torre.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ESWorld.xml</event-sheet>
+        <event-sheet>ESMenu.xml</event-sheet>
+        <event-sheet>ESEtapa1.xml</event-sheet>
+        <event-sheet>ESTorre.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Touch" uid="20">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="499">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

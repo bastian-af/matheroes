@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ESMenu</name>
+    <events>
+        <event-block sid="805445481856422">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="217365473670719" type="System" />
+            </conditions>
+            <actions>
+                <action id="-31" name="Set layout effect parameter" sid="125567569272983" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="823996599246008">
+            <conditions>
+                <condition id="17" name="On tap object" sid="438243113975177" type="Touch">
+                    <param id="0" name="Object">green</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="122165635030207" type="green">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="545856814902935" type="jugar">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="307306362940436" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="5" name="Set frame" sid="127400997809708" type="green">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="365667480983752" type="jugar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Wait" sid="472242224988958" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="438736571567116" type="Button2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="209495850319772" type="opacidad">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="979485236807279" type="bienvenida">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="179556212437299" type="tituloe1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="604920480289579">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="201529243348247" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="357263608362656" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="241231189821091" type="playerRed_stand">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="968519852388781" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="5" name="Set frame" sid="682345183510819" type="playerRed_stand">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="364286272707379">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="776906868357456" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="120552237708351" type="playerRed_stand">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="498946347740091">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="120488767062682" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="514040474590445" type="playerRed_stand">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="202143740740979">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="589824106230623" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="601037061892074" type="playerRed_stand">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="818585358265427">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="921551950086290" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="791596599628858" type="playerRed_stand">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="748727197323928">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="315446252938446" type="playerRed_stand" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="169196179310548" type="playerRed_stand">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="572723789292517">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="425125657420500" type="playerRed_stand" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="930398177820953" type="playerRed_stand">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="792059010998322">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="721322227411003" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="801520222018633" type="playerRed_stand">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="842714941468899">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="208393330767057" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="474683233875957" type="playerRed_stand">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="197525575157230">
+            <conditions>
+                <condition id="17" name="On tap object" sid="422797300359471" type="Touch">
+                    <param id="0" name="Object">Button2</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="711127569319757" type="Button2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="216278315563418" type="Button2">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="637383307617120" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="5" name="Set frame" sid="532585308545308" type="Button2">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="685294298656270" type="tituloe1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="829484245830714" type="tituloe2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="703060135421711" type="ok">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="507536862832247" type="Button2">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="347898020844947">
+            <conditions>
+                <condition id="17" name="On tap object" sid="866056957972826" type="Touch">
+                    <param id="0" name="Object">ok</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="399467287851181" type="ok" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="901475292829612" type="ok">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="883120101922415" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="5" name="Set frame" sid="662148503657820" type="ok">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="696260910562885" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">3</param>
+                </action>
+                <action id="-16" name="Wait" sid="517561789568098" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="996772979385371" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">5</param>
+                </action>
+                <action id="-16" name="Wait" sid="594149321256051" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="241266480405319" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">7</param>
+                </action>
+                <action id="-16" name="Wait" sid="958876869019082" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="453528133559936" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">9</param>
+                </action>
+                <action id="-16" name="Wait" sid="803143303604981" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="329340513487445" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">12</param>
+                </action>
+                <action id="-16" name="Wait" sid="383782511457304" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="368819426630671" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">14</param>
+                </action>
+                <action id="-16" name="Wait" sid="273190112534449" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="825503596045011" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">16</param>
+                </action>
+                <action id="-16" name="Wait" sid="826427068592794" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="501977169430577" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">18</param>
+                </action>
+                <action id="-16" name="Wait" sid="523660989424483" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="977046718983341" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="946292514497180" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-31" name="Set layout effect parameter" sid="502291378870175" type="System">
+                    <param id="0" name="Effect">&quot;Pixellate&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">22</param>
+                </action>
+                <action id="-16" name="Wait" sid="872449250073439" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="139495886447662" type="System">
+                    <param id="0" name="Layout">World</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="882948856250990">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="567950760271862" type="playerRed_stand" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="357025236672463" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="797922530369379" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

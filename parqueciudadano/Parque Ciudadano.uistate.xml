@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Menu</layout>
+        <layout order="2">World</layout>
+        <layout order="4">Etapa1</layout>
+        <layout order="6">Torre</layout>
+        <event-sheet order="1">ESMenu</event-sheet>
+        <event-sheet order="3">ESWorld</event-sheet>
+        <event-sheet order="5">ESEtapa1</event-sheet>
+        <event-sheet active="1" order="7">ESTorre</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/set1_background/" />
+        <folder expanded="1" path="animation-folder/uncolored_forest/" />
+        <folder expanded="1" path="animation-folder/playerBlue_stand/" />
+        <folder expanded="1" path="animation-folder/tileGreen_/" />
+        <folder expanded="1" path="animation-folder/colored_forest/" />
+        <folder expanded="1" path="animation-folder/green/" />
+        <folder expanded="1" path="animation-folder/tileGreen_2/" />
+        <folder expanded="1" path="animation-folder/plantGreen_/" />
+        <folder expanded="1" path="animation-folder/tileGreen_3/" />
+        <folder expanded="1" path="animation-folder/tileGreen_4/" />
+        <folder expanded="1" path="animation-folder/playerRed_stand/" />
+        <folder expanded="1" path="animation-folder/tileGreen_5/" />
+        <folder expanded="1" path="animation-folder/tileGreen_6/" />
+        <folder expanded="1" path="animation-folder/tree/" />
+        <folder expanded="1" path="animation-folder/tree2/" />
+        <folder expanded="1" path="animation-folder/grass/" />
+        <folder expanded="1" path="animation-folder/grass2/" />
+        <folder expanded="1" path="animation-folder/fence/" />
+        <folder expanded="1" path="animation-folder/sun/" />
+        <folder expanded="1" path="animation-folder/doorKnob/" />
+        <folder expanded="1" path="animation-folder/doorTop/" />
+        <folder expanded="1" path="animation-folder/coinGold/" />
+        <folder expanded="1" path="animation-folder/signRight/" />
+        <folder expanded="1" path="animation-folder/bush/" />
+        <folder expanded="1" path="animation-folder/playerGreen_roll/" />
+        <folder expanded="1" path="animation-folder/playerGrey_roll/" />
+        <folder expanded="1" path="animation-folder/playerRed_roll/" />
+        <folder expanded="1" path="animation-folder/sun2/" />
+        <folder expanded="1" path="animation-folder/uncolored_peaks/" />
+        <folder expanded="1" path="animation-folder/doorKnob2/" />
+        <folder expanded="1" path="animation-folder/doorKnob3/" />
+        <folder expanded="1" path="animation-folder/uncolored_forest2/" />
+        <folder expanded="1" path="animation-folder/bienvenida/" />
+        <folder expanded="1" path="animation-folder/ok/" />
+        <folder expanded="1" path="animation-folder/Button2/" />
+        <folder expanded="1" path="animation-folder/doorTop2/" />
+        <folder expanded="1" path="animation-folder/doorTop3/" />
+        <folder expanded="1" path="animation-folder/Gems/" />
+        <folder expanded="1" path="animation-folder/Gems2/" />
+        <folder expanded="1" path="animation-folder/tileBrown_/" />
+        <folder expanded="1" path="animation-folder/tileBrown_2/" />
+        <folder expanded="1" path="animation-folder/uncolored_piramids/" />
+        <folder expanded="1" path="animation-folder/grass3/" />
+        <folder expanded="1" path="animation-folder/grass4/" />
+        <folder expanded="1" path="animation-folder/tree3/" />
+        <folder expanded="1" path="animation-folder/tower_beige/" />
+        <folder expanded="1" path="animation-folder/cloud/" />
+        <folder expanded="1" path="animation-folder/tileBrown_3/" />
+        <folder expanded="1" path="animation-folder/tileBrown_4/" />
+        <folder expanded="1" path="animation-folder/tileBrown_5/" />
+        <folder expanded="1" path="animation-folder/tileBrown_6/" />
+        <folder expanded="1" path="animation-folder/castleCliffLeft/" />
+        <folder expanded="1" path="animation-folder/castleCliffRight/" />
+        <folder expanded="1" path="animation-folder/castleMid/" />
+        <folder expanded="1" path="animation-folder/buttonGreen/" />
+        <folder expanded="1" path="animation-folder/flagGreen/" />
+        <folder expanded="1" path="animation-folder/castle/" />
+        <folder expanded="1" path="animation-folder/houseBeigeBottomLeft/" />
+        <folder expanded="1" path="animation-folder/houseBeigeBottomMid/" />
+        <folder expanded="1" path="animation-folder/chimneyThin/" />
+        <folder expanded="1" path="animation-folder/roofRedTopMid/" />
+        <folder expanded="1" path="animation-folder/houseBeigeAlt/" />
+        <folder expanded="1" path="animation-folder/houseBeigeMidLeft/" />
+        <folder expanded="1" path="animation-folder/windowLowCheckered/" />
+        <folder expanded="1" path="animation-folder/doorKnobE1/" />
+        <folder expanded="1" path="animation-folder/houseBeige/" />
+        <folder expanded="1" path="animation-folder/doorWindowTop/" />
+        <folder expanded="1" path="animation-folder/roofRedTopLeft/" />
+        <folder expanded="1" path="animation-folder/houseBeige2/" />
+        <folder expanded="1" path="animation-folder/roofRedTopMid2/" />
+        <folder expanded="1" path="animation-folder/roofRedMid/" />
+        <folder expanded="1" path="animation-folder/roofRedTopLeft2/" />
+        <folder expanded="1" path="animation-folder/roofRedTopLeft3/" />
+        <folder expanded="1" path="animation-folder/roofRedTopRight/" />
+        <folder expanded="1" path="animation-folder/Gems3/" />
+        <folder expanded="1" path="animation-folder/Button_2/" />
+        <folder expanded="1" path="animation-folder/Gems4/" />
+        <folder expanded="1" path="animation-folder/ok2/" />
+        <folder expanded="1" path="animation-folder/greyTalk/" />
+        <folder expanded="1" path="animation-folder/okGrayTalk/" />
+        <folder expanded="1" path="animation-folder/Gems5/" />
+        <folder expanded="1" path="animation-folder/gemlvl2/" />
+        <folder expanded="1" path="animation-folder/gemlvl3/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/eggicon/" />
+        <folder expanded="1" path="animation-folder/bananas/" />
+        <folder expanded="1" path="animation-folder/manzana/" />
+        <folder expanded="1" path="animation-folder/FastFoodicon_/" />
+        <folder expanded="1" path="animation-folder/CUMPLEAÑOS/" />
+        <folder expanded="1" path="animation-folder/dirtMid/" />
+        <folder expanded="1" path="animation-folder/tochLit/" />
+        <folder expanded="1" path="animation-folder/castleMid2/" />
+        <folder expanded="1" path="animation-folder/door_openMid/" />
+        <folder expanded="1" path="animation-folder/door_openTop/" />
+        <folder expanded="1" path="animation-folder/window/" />
+        <folder expanded="1" path="animation-folder/windowCheckered/" />
+        <folder expanded="1" path="animation-folder/colored_forest2/" />
+        <folder expanded="1" path="animation-folder/Gemse1/" />
+        <folder expanded="1" path="animation-folder/bienvenidaverde/" />
+        <folder expanded="1" path="animation-folder/ok3/" />
+        <folder expanded="1" path="animation-folder/pacoTalk2/" />
+        <folder expanded="1" path="animation-folder/okPacoTalk/" />
+        <folder expanded="1" path="animation-folder/gemverde/" />
+        <folder expanded="1" path="animation-folder/Button_/" />
+        <folder expanded="1" path="animation-folder/ciegoTalk/" />
+        <folder expanded="1" path="animation-folder/okCiegoTalk/" />
+    </folders-expanded>
+</c2uistate>

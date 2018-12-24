@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Grid_Size" sid="379896386465234" static="0" type="number">16</variable>
+        <event-block sid="238895636425949">
+            <conditions />
+            <actions />
+            <sub-events>
+                <event-block sid="235760998321074">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="874584362589470" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="277883475543379" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="434508126188937" type="player">
+                            <param id="0" name="Instance variable">Step_timer</param>
+                            <param id="1" name="Value">Grid_Size</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="676516389991673">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="190927049955496" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="612900625084850" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Value">180</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="989535661427878" type="player">
+                            <param id="0" name="Instance variable">Step_timer</param>
+                            <param id="1" name="Value">Grid_Size</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="284481195367681">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="327681593745535" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="820663152359613" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Value">270</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="445839639690293" type="player">
+                            <param id="0" name="Instance variable">Step_timer</param>
+                            <param id="1" name="Value">Grid_Size</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="831764806616272">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="536272222812434" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="307896843634134" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Value">90</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="460547909990749" type="player">
+                            <param id="0" name="Instance variable">Step_timer</param>
+                            <param id="1" name="Value">Grid_Size</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="729118417073339">
+            <conditions />
+            <actions />
+            <sub-events>
+                <event-block sid="105197713333479">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="552486052689256" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="288914011277510" type="player">
+                            <param id="0" name="Animation">&quot;der&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="120341365845903">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="221239011697994" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="180688987805182" type="player">
+                            <param id="0" name="Animation">&quot;abajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="566303319233909">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="405327886772779" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="485711738927156" type="player">
+                            <param id="0" name="Animation">&quot;izq&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="966740970490354">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="477341496719856" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">270</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="290684081787416" type="player">
+                            <param id="0" name="Animation">&quot;arriba&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="276742974824427">
+            <conditions />
+            <actions />
+            <sub-events>
+                <event-block sid="373852797345032">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="607592661487696" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="622073303978208" type="player">
+                            <param id="0" name="Angle">player.Dir</param>
+                            <param id="1" name="Distance">player.Speed</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="550450269200529" type="player">
+                            <param id="0" name="Instance variable">Step_timer</param>
+                            <param id="1" name="Value">player.Speed</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="782911782666561" type="player">
+                            <param id="0" name="Animation">&quot;derRun&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="479034587479684">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="127124193031108" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="380537700134621" type="player">
+                            <param id="0" name="Angle">player.Dir</param>
+                            <param id="1" name="Distance">player.Speed</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="854269147834812" type="player">
+                            <param id="0" name="Instance variable">Step_timer</param>
+                            <param id="1" name="Value">player.Speed</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="742948659121665" type="player">
+                            <param id="0" name="Animation">&quot;abajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="977649858087212">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="917232088092586" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="927150917469398" type="player">
+                            <param id="0" name="Angle">player.Dir</param>
+                            <param id="1" name="Distance">player.Speed</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="296969304327564" type="player">
+                            <param id="0" name="Instance variable">Step_timer</param>
+                            <param id="1" name="Value">player.Speed</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="420015004676327" type="player">
+                            <param id="0" name="Animation">&quot;izqRun&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="304288641446729">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="725519290115266" type="player">
+                            <param id="0" name="Instance variable">Dir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">270</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="992072469765766" type="player">
+                            <param id="0" name="Angle">player.Dir</param>
+                            <param id="1" name="Distance">player.Speed</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="596776500817685" type="player">
+                            <param id="0" name="Instance variable">Step_timer</param>
+                            <param id="1" name="Value">player.Speed</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="206920963702592" type="player">
+                            <param id="0" name="Animation">&quot;arribaRun&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="106810159609135">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>16c1le9x6gsdu</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="terrenoBase" sid="857980375076075">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\basti\Downloads\Sprites\RPG\Spritesheet\roguelikeSheet_transparent.png" />
+            <tiles />
+        </object-type>
+        <object-type name="elementosSuelo" sid="749718875889706">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\basti\Downloads\Sprites\RPG\Spritesheet\roguelikeSheet_transparent.png" />
+            <tiles />
+        </object-type>
+        <object-type name="player" sid="358467102342609">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Speed" sid="411768876591547" type="number" />
+                <instance-variable name="Dir" sid="119427914157634" type="number" />
+                <instance-variable name="Step_timer" sid="574402271055417" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="349128734106809">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="abajo" pingpong="0" repeatcount="1" repeatto="0" sid="137635918749766" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.625" original-source="C:\Users\basti\Downloads\Sprites\RPG\Down_1.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0585938" />
+                            <point x="0.9375" y="0.0546875" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.0625" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="arriba" pingpong="0" repeatcount="1" repeatto="0" sid="656591615091898" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\basti\Downloads\Sprites\RPG\Up_1.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0585938" />
+                            <point x="0.9375" y="0.0546875" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.0625" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="izq" pingpong="0" repeatcount="1" repeatto="0" sid="699634999017343" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\basti\Downloads\Sprites\RPG\Left_1.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0585938" />
+                            <point x="0.9375" y="0.0546875" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.0625" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="der" pingpong="0" repeatcount="1" repeatto="0" sid="680986773156163" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\basti\Downloads\Sprites\RPG\Right_1.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0585938" />
+                            <point x="0.9375" y="0.0546875" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.0625" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="abajoRun" pingpong="0" repeatcount="1" repeatto="0" sid="473549266859980" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Down_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Down_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Down_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Down_4.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="arribaRun" pingpong="0" repeatcount="1" repeatto="0" sid="650080359146211" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Up_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Up_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Up_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Up_1.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="izqRun" pingpong="0" repeatcount="1" repeatto="0" sid="873505320369599" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Left_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Left_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Left_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Left_1.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="derRun" pingpong="0" repeatcount="1" repeatto="0" sid="426566848156141" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Right_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Right_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Right_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\basti\Downloads\Sprites\RPG\Right_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="708080999177056">
+            <plugin id="Keyboard" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
